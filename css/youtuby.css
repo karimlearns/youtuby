@@ -1,0 +1,285 @@
+/* Start Adjustment's Body */
+body {
+    font-family: 'Cairo', sans-serif !important;
+}
+/* End Adjustment's Body */
+
+/* Start Generale */
+.down {
+    top: 60px !important;
+}
+
+button {
+    background-color: transparent !important;
+    color: #bf40bf !important;
+    border-color: #bf40bf !important;
+}
+
+button:hover {
+    background-color: #bf40bf !important;
+    color: #fff !important;
+}
+
+input:focus,
+button:focus {
+    box-shadow: none !important;
+}
+
+a {
+    color: #222;
+    text-decoration: none !important;
+}
+
+/* Start Shrink text */
+.my-card-text { /* All pages sauf index */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.my-card-body {
+    min-width: 0;
+}
+/* End Shrink text */
+
+.my-video { /* Watch And Channel Pages*/
+    background-color: #eee !important;
+    padding: 10px !important;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+/* End Generale */
+
+/* Start Adjustment's Header */
+.nav-header { /* All pages */
+    background-color: #fff !important;
+    height: 58px;
+}
+
+.video-icon { /* All pages */
+    background-color: #bf40bf;
+    color: #fff;
+    border-radius: 15%;
+}
+
+.cont-link:hover .link-nav{ /* All pages */
+    background-color: #bf40bf;
+    color: #fff !important;
+}
+
+.login,
+.login:hover { /* All pages */
+    color: #bf40bf;
+}
+
+.close-edit:hover {
+    background-color: transparent !important;
+    color: #fb40fb !important;
+}
+
+.nav-header .bars-icon { /* All pages */
+    cursor: pointer;
+}
+
+.my-side-bar { /* All pages */
+    position: fixed;
+    z-index: 4;
+    right: -17rem;
+    width: 17rem;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.my-side-bar:hover { /* All pages */
+    overflow-y: scroll;
+}
+
+.layer { /* All pages */
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar::-webkit-scrollbar { /* All pages */
+    background: rgb(230, 230, 230);
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb { /* All pages */
+    background: rgb(179, 179, 179);
+    width: 8px;
+}
+
+.nav-show { /* All pages */
+    right: 0rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.my-side-bar .purple { /* All pages */
+    color: #bf40bf;
+}
+
+.my-side-bar .my-list-group-item:hover {
+    color: #fff;
+    background-color: #bf40bf;
+}
+
+.my-side-bar .my-list-group-item:hover .purple{ /* All pages */
+    color: #fff;
+}
+
+.my-search-down { /* All pages */
+    position: fixed;
+    background-color: #efefef;
+}
+/* End Adjustment's Header */
+
+/* Start Play Icon & And Time */
+.card-icons {
+    position: relative;
+}
+
+time { /* All Pages */
+    position: absolute;
+    bottom: 5px !important;
+    left: 5px !important;
+    color: #fff;
+    background-color: #000;
+    padding: 0 3px;
+}
+
+.play-video { /* All Pages sauf Search */
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: #2c3131c7;
+    display: none;
+}
+
+.close-card { /* Log And Watch Pages */
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    font-size: 25px;
+    font-weight: bolder;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.card-horizontal { /* Log And Watch Pages */
+    border: 1px solid #77777759;
+}
+
+.card-horizontal:hover .play-video,
+.card-horizontal:hover .close-card, /* Log And Watch Pages */ 
+.my-card-class:hover .play-video { /* Index And Channel Pages */
+    display: block !important;
+    transition: 0.3s !important;
+}
+
+.card-class:hover { /* Index And Channel Pages */
+    transform: translateY(-3%);
+}
+
+.card-class { /* Index And Channel Pages */
+    transition: .5s;
+}
+/* End Play Icon & And Time */
+
+/* Start Index */
+.my-card-class { /* Index And Channel Pages */
+    min-height: 336px !important;
+}
+
+.my-card-class .my-card-icons { /* !!! */
+    position: absolute;
+    top: calc(31%) ;
+    left: 2px;
+}
+/* End Index */
+
+@media (min-width: 993px) {
+    .card-class { /* Channel And Index Pages */
+        flex-basis: calc(25% - 10px);
+    }
+    .block { /* All Pages */
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-class { /* Channel And Index Pages */
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 1115px) {
+    .my-navbar-collapse { /* All Pages */
+        flex-direction:row;
+    }
+    .my-search-down { /* All Pages */
+        display: none;
+    }
+}
+
+@media (max-width: 1115px) {
+    .my-form-inline input,
+    .my-form-inline button,
+    .ul-links { /* All Pages */
+        display: none !important;
+    }
+    .nav-header b { /* All Pages */
+        margin-right: calc(50% - 104px);
+    }
+    .my-navbar-collapse { /* All Pages */
+        flex-direction: row-reverse;
+    }
+    .my-form-inline i { /* All Pages */
+        display: block !important;
+        position: absolute;
+        left: 35%;
+        cursor: pointer;
+        color: #bf40bf;
+    }
+    .my-form-inline i:hover { /* All Pages */
+        background-color: #bf40bf;
+        color: white;
+        padding: 5px 3px;
+        padding: 15px 7px;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+    .my-search-down { /* All Pages */
+        position: absolute;
+        top: -60px;
+        z-index: 3;
+        left: 0;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-class { /* Channel And Index Pages */
+        max-width: calc(calc(100% / 3) - 10px);
+    }
+}
+
+@media (max-width: 567px) {
+    .card-class { /* Channel And Index Pages */
+        max-width: 100%;
+    }
+}
+/* End Adjustment's Index  */

@@ -1,0 +1,63 @@
+/* Start Adjustment's Search  */
+.block {
+    /* display: block; */
+    transition: 0.3s;
+}
+
+.filter {
+    cursor: pointer;
+}
+
+.show {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.my-row label,
+.my-row input {
+    cursor: pointer;
+}
+
+.my-row input:checked+span {
+    color:#bf40bf;
+}
+
+.card-horizontal .my-play {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+.card-horizontal:hover .my-play {
+    display: block;
+}
+
+.list-group-item.active {
+    background-color:#bf40bf;
+    border-color:#bf40bf;
+}
+
+.close-card {
+    position: absolute;
+    right: 3px;
+    top: -5px;
+    font-size: 20px;
+    z-index: 5;
+    cursor: pointer;
+}
+/* End Adjustment's Search  */
+
+@media (max-width: 992px) {
+    .show-filter {
+        margin-bottom: 10px;
+    }
+    .my-img-square-wrapper {
+        padding: 5px;
+    }
+    .my-img-square-wrapper img {
+        width: 100%;
+    }
+}
+

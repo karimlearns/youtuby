@@ -1,0 +1,25 @@
+/* Start Image Video */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .my-image-video {
+        width: 100%;
+    }
+}
+/* End Image Video */
+
+.list-group-item.active {
+    background-color: #bf40bf;
+    border-color: #bf40bf;
+}
+
+.close-card {
+    margin-right: 20px;
+}
+
+.history-page .search-history {
+    background-color: #f7f7f7;
+    height: fit-content;
+}
+
+.my-image-video {
+    min-width: 100% !important;
+}

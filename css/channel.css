@@ -1,0 +1,32 @@
+.channel-page .follow button {
+    color: #fff !important;
+    background-color: #bf40bf !important;
+}
+
+.channel-page .social-media {
+    bottom: 18px;
+    left: 20px;
+}
+
+.channel-page .follow {
+    bottom: 18px;
+    right:18px;
+}
+
+.my-description-chan {
+    max-width: 100% !important;
+}
+
+@media (min-width: 993px) {
+    .my-description-chan {
+        max-width: calc(50% - 20px) !important;
+    }
+}
+@media (max-width: 567px) {
+    .my-navbar-nav .my-nav-item a {
+        color: black !important;
+        text-align: center;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
